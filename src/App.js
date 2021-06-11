@@ -56,22 +56,22 @@ function App() {
               <div className='div1'>
                   <img src='http://openweathermap.org/img/wn/10d@2x.png' alt='icon'/>
                   <p>Tue</p>
+                  <p className='nextday-row-p'> 25 °C</p>
+              </div>
+               <div className='div2'>
+                  <img src='http://openweathermap.org/img/wn/10d@2x.png' alt='icon'/>
+                  <p>Wen</p>
                   <p className='nextday-row-p'> 30 °C</p>
               </div>
                <div className='div2'>
                   <img src='http://openweathermap.org/img/wn/10d@2x.png' alt='icon'/>
-                  <p>Tue</p>
-                  <p className='nextday-row-p'> 30 °C</p>
+                  <p>Thur</p>
+                  <p className='nextday-row-p'> 27 °C</p>
               </div>
                <div className='div2'>
                   <img src='http://openweathermap.org/img/wn/10d@2x.png' alt='icon'/>
-                  <p>Tue</p>
-                  <p className='nextday-row-p'> 30 °C</p>
-              </div>
-               <div className='div2'>
-                  <img src='http://openweathermap.org/img/wn/10d@2x.png' alt='icon'/>
-                  <p>Tue</p>
-                  <p className='nextday-row-p'> 30 °C</p>
+                  <p>Fri</p>
+                  <p className='nextday-row-p'> 28 °C</p>
               </div>
         </div>
         <div className='location-column'>
