@@ -12,12 +12,10 @@
   flex-wrap: wrap;
 }
 .today-row {
-  /* background-image: linear-gradient(135deg, #72edf2 10%, #5151e5 100%);*/
   background-image: linear-gradient(135deg, #5151e5 10%, #72edf2 100%);
   width: 45%;
   border-radius: 25px;
 }
-
 .location-row {
   width: 55%;
 }
@@ -84,7 +82,7 @@ button {
   padding: 5px;
   font-weight: 600;
 }
-.p {
+.location-details-value {
   text-align: right;
 }
 .nextday-row {
@@ -108,49 +106,37 @@ button {
 .nextday-row p {
   padding-bottom: 10px;
 }
-.div1 {
-  /*background-color: white;*/
+.nextday-column-1 {
   background-image: linear-gradient(135deg, #5151e5 10%, #72edf2 100%);
   color: white;
   border-radius: 10px;
   width: 70px;
   transition: 0.5s;
 }
-.div1:hover,
-button:hover {
+.nextday-column-1:hover,
+button:hover,
+.nextday-column-2:hover {
   -webkit-transform: scale(1.2);
   -ms-transform: scale(1.2);
   transform: scale(1.2);
 }
-.div2 {
+.nextday-column-2 {
   transition: 0.5s;
   width: 70px;
 }
-.div2:hover {
-  -webkit-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  transform: scale(1.2);
+.nextday-column-2:hover {
   background-image: linear-gradient(135deg, #5151e5 10%, #72edf2 100%);
-  color: white;
   border-radius: 10px;
 }
 .nextday-row-p {
   font-weight: 700;
 }
-
-@media (max-width: 1270px) {
+@media (max-width: 1370px) {
   .main {
     width: 60%;
   }
 }
-
 @media (max-width: 1050px) {
-  .main {
-    width: 70%;
-  }
-}
-
-@media (max-width: 900px) {
   .main {
     margin: 30px auto;
     height: 800px;
@@ -164,32 +150,13 @@ button:hover {
     width: 100%;
   }
 }
-
 @media (max-width: 800px) {
-  .main {
-    width: 60%;
-  }
-}
-
-@media (max-width: 680px) {
   .main {
     width: 70%;
   }
 }
-
-@media (max-width: 550px) {
-  .main {
-    width: 80%;
-  }
-}
-
 @media (max-width: 400px) {
   .main {
-    width: 90%;
-  }
-}
-@media (max-width: 300px) {
-  .main {
-    width: 100%;
+    width: 95%;
   }
 }
