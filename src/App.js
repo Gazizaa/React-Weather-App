@@ -14,7 +14,7 @@ function App() {
   const [longitude, setLongitude] = useState('2.3488');
 
 
-  let getCoordinates = () => {
+  const getCoordinates = () => {
       value === '' ? alert('Please enter a city name') :
         axios.get(`http://api.openweathermap.org/geo/1.0/direct?q=${value}&appid=cbc896ea328bdf19333c674679f10175`)
           .then(response => {
@@ -26,15 +26,19 @@ function App() {
             console.log(error);
             alert('Wrong city name');
           });
-    };
+  };
 
-   let getWeather = () => {
+  const getWeather = () => {
       axios.get( `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&exclude=minutely&appid=cbc896ea328bdf19333c674679f10175&units=metric`)
       .then((response) => {
           setCity(response.data);
-    }); 
-    setValue('');
+      }); 
+      setValue('');
   };
+
+  useEffect(() => {
+    getCoordinates();
+  }, []);
    
   useEffect(() => {
     getWeather();
@@ -69,7 +73,7 @@ function App() {
         </div>
         <div className='nextday-row'>
           {
-            city?.daily?.slice(2, 6)?.map((day, index) => (
+            city?.daily?.slice(1, 5)?.map((day, index) => (
               <div className='nextday-column' key={index}>
                     <img src={`http://openweathermap.org/img/wn/${day.weather[0].icon}@2x.png`} alt='icon'/>
                     <p>{moment(day.dt * 1000).format('ddd')}</p>
