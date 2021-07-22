@@ -1,9 +1,9 @@
 # Weather App
-## Потестить можно здесь: [ссылка](https://gazizaa.github.io/react-weather-app/)
+## You can test it here: [ссылка](https://gazizaa.github.io/react-weather-app/)
 
-Приложение прогноза погоды написано с помощью ReactJS с использованием React Hooks и OpenWeather API. 
-Приложение показывает текущую дату, текущую погоду и погоду на следующие 4 дня. По умолчанию установлен город Париж. 
 
+The weather forecast app is written with ReactJS using React Hooks and the OpenWeather API.
+The application shows the current date, current weather and weather for the next 4 days. The city of Paris is set by default.
 
 Stack:
 
