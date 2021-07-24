@@ -1,5 +1,5 @@
 # Weather App
-## You can test it here: [ссылка](https://gazizaa.github.io/react-weather-app/)
+## You can test it here: [link](https://gazizaa.github.io/react-weather-app/)
 
 
 The weather forecast app is written with ReactJS using React Hooks and the OpenWeather API.
